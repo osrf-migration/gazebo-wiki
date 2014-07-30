@@ -13,6 +13,6 @@ If you plan on hosting ROS and OSRF mirrors, the best way is to use the [ros-inf
 ### Europe
 
 #### [Madrid, Spain. (JdeRobot group. Universidad Rey Juan Carlos)](http://apt-mirror.jderobot.org/osrf-gazebo/ubuntu/)
- * '''Administrator: ''' Roberto Calvo, Jose Maria Cañas.
- * '''URL: ''' http://apt-mirror.jderobot.org/osrf-gazebo/ubuntu/
- * '''source.list: ''' deb http://apt-mirror.jderobot.org/osrf-gazebo/ubuntu/ main
+ * **Administrator:** Roberto Calvo, Jose Maria Cañas.
+ * **URL:** http://apt-mirror.jderobot.org/osrf-gazebo/ubuntu/
+ * **source.list:** deb http://apt-mirror.jderobot.org/osrf-gazebo/ubuntu/ main
