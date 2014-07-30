@@ -9,3 +9,9 @@ Gazebo is an open source project that is maintained by hardworking developers fo
 [URI](https://bitbucket.org/osrf/gazebo/wiki/uri) - Description of URIs used in [SDF](http://gazebosim.org/sdf)
 
 [Troubleshooting](https://bitbucket.org/osrf/gazebo/wiki/troubleshooting) - Strategies for solving common issues.
+
+### Related project
+
+* [DRC](https://bitbucket.org/osrf/drcsim/wiki/Home)
+* [CloudSim](http://cloudsim.io)
+* [Gzweb](https://bitbucket.org/osrf/gzweb/wiki/Home)
