@@ -7,3 +7,5 @@ Gazebo is an open source project that is maintained by hardworking developers fo
 [Wishlist](https://bitbucket.org/osrf/gazebo/wiki/wishlist)
 
 [URI](https://bitbucket.org/osrf/gazebo/wiki/uri) - Description of URIs used in [SDF](http://gazebosim.org/sdf)
+
+[Troubleshooting](https://bitbucket.org/osrf/gazebo/wiki/troubleshooting) - Strategies for solving common issues.
