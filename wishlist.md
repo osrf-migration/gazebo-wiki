@@ -1,8 +1,8 @@
 This wish list is a set of features we (the Gazebo community) would like to see in Gazebo. 
 
-If you would like to tackle one of these features, please put your name next to the feature and send a message to the [http://kforge.ros.org/mailman/listinfo/gazebo-list Gazebo mailing list] about your work. Keep in mind that you don't have to work in isolation. Ask for help and we will do our best to provide you with guidance.
+If you would like to tackle one of these features, please put your name next to the feature and send a message to the [Gazebo mailing list](http://kforge.ros.org/mailman/listinfo/gazebo-list) about your work. Keep in mind that you don't have to work in isolation. Ask for help and we will do our best to provide you with guidance.
 
-Make sure you've read up on our [http://gazebosim.org/user_guide/modifying.html developers guide]
+Make sure you've read up on our [developers guide](http://gazebosim.org/user_guide/modifying.html)
 
 
 *  **Audio in Gazebo:** Integrate OpenAL.
