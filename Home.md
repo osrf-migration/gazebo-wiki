@@ -2,4 +2,6 @@
 
 Gazebo is an open source project that is maintained by hardworking developers for everyone's benefit. If you would like to contributed, please join the Gazebo project on bitbucket.org and contact Nate Koenig.
 
-[Gazebo Mirors](https://bitbucket.org/osrf/gazebo/wiki/gazebo_mirrors)
+[Gazebo Mirrors](https://bitbucket.org/osrf/gazebo/wiki/gazebo_mirrors)
+
+[Wishlist](https://bitbucket.org/osrf/gazebo/wiki/wishlist)
