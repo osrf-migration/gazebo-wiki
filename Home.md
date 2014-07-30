@@ -10,7 +10,7 @@ Gazebo is an open source project that is maintained by hardworking developers fo
 
 [Troubleshooting](https://bitbucket.org/osrf/gazebo/wiki/troubleshooting) - Strategies for solving common issues.
 
-### Related project
+### Related projects
 
 * [DRC](https://bitbucket.org/osrf/drcsim/wiki/Home)
 * [CloudSim](http://cloudsim.io)
