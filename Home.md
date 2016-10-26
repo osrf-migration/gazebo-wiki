@@ -2,6 +2,8 @@
 
 Welcome to Gazebo's wiki. 
 
+[Build Cop](https://bitbucket.org/osrf/gazebo/wiki/buildcop)
+
 [Gazebo Mirrors](https://bitbucket.org/osrf/gazebo/wiki/gazebo_mirrors)
 
 [Wishlist](https://bitbucket.org/osrf/gazebo/wiki/wishlist)
