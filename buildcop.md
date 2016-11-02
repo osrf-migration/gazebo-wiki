@@ -22,5 +22,5 @@ A build cop:
 
 ### 2016
 
-[October build report](https://bitbucket.org/osrf/gazebo/wiki/buildcop/2016/10)
-[November build report](https://bitbucket.org/osrf/gazebo/wiki/buildcop/2016/11)
+* [October build report](https://bitbucket.org/osrf/gazebo/wiki/buildcop/2016/10)
+* [November build report](https://bitbucket.org/osrf/gazebo/wiki/buildcop/2016/11)
