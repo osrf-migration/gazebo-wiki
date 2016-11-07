@@ -2,6 +2,9 @@
 
 A build cop monitors the [continuous integration system](build.osrfoundation.org), reports build and test failures, and farms out work to resolve issues. The role of build cop rotates on a weekly basis between OSRF developers.
 
+* [Jenkins Build Fail](http://build.osrfoundation.org/view/main/view/BuildCopFail/)
+* [Jenkins Build Test](http://build.osrfoundation.org/view/main/view/BuildCopTests/)
+
 A build cop:
 
 1. Sets their email address to the Jenkins alias. Jenkins will send build notifications to this email address.
