@@ -10,6 +10,7 @@ A build cop:
 
 1. Notify another OSRF developer to create an issue for a failure. The build cop should maintain a rotating list of developers who receive these requests. The build cop should send a link to the failure, and a short description, such as failing test name, of the problem.
 
+    1. Search for existing issues. Good keywords are "flaky", and test names. If you find an existing issue, rename the title to include "Build Cop".
     1. The developer assigned to create an issue should analyze the build, and create an issue with a title that has the "Build Cop" prefix.
     1. The issue should be assigned to the person who broke the build or test. Do not assign a person if a culprit cannot be identified.
     1. The person assigned to the issue should work to resolve the issue ASAP. Volunteers should step forward to handle unassigned issues.
