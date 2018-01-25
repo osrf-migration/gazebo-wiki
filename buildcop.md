@@ -3,7 +3,28 @@
 A build cop monitors the [continuous integration system](http://build.osrfoundation.org), reports build and test failures, and farms out work to resolve issues. The role of build cop rotates on a weekly basis between OSRF developers.
 
 * [Jenkins Build Fail](http://build.osrfoundation.org/view/main/view/BuildCopFail/)
-* [Jenkins Build Test](http://build.osrfoundation.org/view/main/view/BuildCopTests/)
+
+Use the following script to count the number of jobs of a given color:
+
+~~~
+curl https://build.osrfoundation.org/view/main/view/BuildCopFail/api/json 2>/dev/null | python -c '\
+import json, sys;
+jobs = json.loads(sys.stdin.read())["jobs"];
+print("total: %d" % len(jobs));
+for c in ["blue", "yellow", "red", "aborted"]:
+    jc = [j for j in jobs if j["color"] == c]
+    print("%s: %d/%d, %.1f%%" % (c, len(jc), len(jobs), 100*float(len(jc)) / len(jobs)))'
+~~~
+
+It will generate output like the following:
+
+~~~
+total: 114
+blue: 64/114, 56.1%
+yellow: 39/114, 34.2%
+red: 9/114, 7.9%
+aborted: 2/114, 1.8%
+~~~
 
 A build cop:
 
