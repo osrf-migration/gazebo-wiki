@@ -4,6 +4,8 @@ Welcome to Gazebo's wiki.
 
 [Build Cop](https://bitbucket.org/osrf/gazebo/wiki/buildcop)
 
+[Release process](https://bitbucket.org/osrf/gazebo/wiki/releaseprocess)
+
 [Gazebo Mirrors](https://bitbucket.org/osrf/gazebo/wiki/gazebo_mirrors)
 
 [Wishlist](https://bitbucket.org/osrf/gazebo/wiki/wishlist)
