@@ -3,7 +3,7 @@ This page contains information about creating a new major release of Gazebo.
 1. Dependency freeze
 
     * **When**: First Thursday in December.
-    * **What**: The version of each Gazebo dependency is locked. New releases of packages that are maintained by Open Robotics, such as Ignition Math, should be generated.
+    * **What**: The version of each Gazebo dependency is locked. New releases of packages that are maintained by Open Robotics, such as Ignition Math, should be generated when appropriate.
 
 2. Feature freeze 
 
@@ -15,27 +15,27 @@ This page contains information about creating a new major release of Gazebo.
     * **When**: After feature freeze.
     * **What**: Focus on reviewing pull requests that target the release branch. Also focus on existing tutorial pull requests.
 
-2. Upcoming release announcement
+4. Upcoming release announcement
 
     * **When**: Day after feature freeze.
     * **What**: Send an announcement that notifies the community of an upcoming release. Also announce the tutorial party. 
 
-3. Code freeze
+5. Code freeze
 
     * **When**: 1 week after feature freeze.
     * **What**:
         * The release branch of Gazebo is frozen. No new code unless it fixes a bug.
 
-4. Documentation review
+6. Documentation review
 
     * **When**: Between code freeze and creation of prerelease.
     * **What**: Make sure 
-4. Create prerelease
+7. Create prerelease
 
     * **When**: ASAP after code freeze.
     * **What**: Create a debian prerelease of Gazebo.
 
-4. Tutorial party
+8. Tutorial party
 
     * **When**: First Tuesday after code freeze.
     * **What**:
@@ -43,7 +43,7 @@ This page contains information about creating a new major release of Gazebo.
         * Coordinate tutorial party on community.gazebosim.org
         * Review existing tutorials using Gazebo prerelease.
 
-4. Release
+9. Release
 
     * **When**: 1 week after code freeze.
     * **What**:
