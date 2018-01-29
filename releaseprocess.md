@@ -10,6 +10,11 @@ This page contains information about creating a new major release of Gazebo.
     * **When**: First Thursday in January.
     * **What**: The release branch in Gazebo is created. If there are existing pull requests then some or all will be re-targeted to the release branch. The choice of pull requests is determined by the Gazebo team. No new pull requests will be accepted into the release branch unless the pull request fixes a major bug.
 
+3. Pull request focus
+
+    * **When**: After feature freeze.
+    * **What**: Focus on reviewing pull requests that target the release branch. Also focus on existing tutorial pull requests.
+
 2. Upcoming release announcement
 
     * **When**: Day after feature freeze.
