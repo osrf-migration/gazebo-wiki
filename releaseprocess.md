@@ -29,7 +29,8 @@ This page contains information about creating a new major release of Gazebo.
 6. Documentation review
 
     * **When**: Between code freeze and creation of prerelease.
-    * **What**: Make sure 
+    * **What**: Make sure gazebo and dependency documentation is correct and up to date.
+
 7. Create prerelease
 
     * **When**: ASAP after code freeze.
