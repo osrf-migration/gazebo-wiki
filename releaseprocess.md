@@ -3,7 +3,7 @@ This page contains information about creating a new major release of Gazebo.
 1. Dependency freeze
 
     * **When**: First Thursday in December.
-    * **What**: The version of each Gazebo dependency is locked. New releases of packages that are maintained by Open Robotics, such as Ignition Math, should be generated when appropriate. Start the works in Debian to introduce the new versions.
+    * **What**: The version of each Gazebo dependency is locked. New releases of packages that are maintained by Open Robotics, such as Ignition Math, should be generated when appropriate. Start the works in Debian to introduce the new versions. Each dependency must have a prerelease.
 
 2. Feature freeze 
 
@@ -46,7 +46,7 @@ This page contains information about creating a new major release of Gazebo.
 
 9. Release
 
-    * **When**: 1 week after code freeze.
+    * **When**: ~1 week after code freeze.
     * **What**:
         * Create blog post and release announcement.
         * Update website with new links, statistics, and roadmap.
