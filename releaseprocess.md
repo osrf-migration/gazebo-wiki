@@ -49,5 +49,5 @@ This page contains information about creating a new major release of Gazebo.
     * **When**: ~1 week after code freeze.
     * **What**:
         * Create blog post and release announcement.
-        * Update website with new links, statistics, and roadmap.
+        * Update website with new links, statistics, and roadmap. For statistic generation, refer to the `app/controller/home_controller.rb` file in the `gazebo_web_app`.
         * Release the final Gazebo debian.
