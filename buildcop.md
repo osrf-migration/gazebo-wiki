@@ -19,11 +19,11 @@ for c in ["blue", "yellow", "red", "aborted"]:
 It will generate output like the following:
 
 ~~~
-total: 114
-blue: 64/114, 56.1%
-yellow: 39/114, 34.2%
-red: 9/114, 7.9%
-aborted: 2/114, 1.8%
+* total: 114
+* blue: 64/114, 56.1%
+* yellow: 39/114, 34.2%
+* red: 9/114, 7.9%
+* aborted: 2/114, 1.8%
 ~~~
 
 A build cop:
