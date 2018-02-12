@@ -13,7 +13,7 @@ jobs = json.loads(sys.stdin.read())["jobs"];
 print("total: %d" % len(jobs));
 for c in ["blue", "yellow", "red", "aborted"]:
     jc = [j for j in jobs if j["color"] == c]
-    print("%s: %d/%d, %.1f%%" % (c, len(jc), len(jobs), 100*float(len(jc)) / len(jobs)))'
+    print("* %s: %d/%d, %.1f%%" % (c, len(jc), len(jobs), 100*float(len(jc)) / len(jobs)))'
 ~~~
 
 It will generate output like the following:
