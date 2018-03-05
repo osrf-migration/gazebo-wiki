@@ -46,9 +46,7 @@ You can manually add entries to the change column by comparing to the entries in
 
 A build cop:
 
-1. Sets their email address to the Jenkins alias. Jenkins will send build notifications to this email address.
-
-1. Actively monitors the build reports for failures. At a minimum this should be done twice per day.
+1. Actively monitors the [BuildCopFail page](https://build.osrfoundation.org/view/main/view/BuildCopFail/) for failures. At a minimum this should be done once per day.
 
 1. Send out a daily report about the build status, and create an entry on this wiki (see the report list below).
 
