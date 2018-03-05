@@ -4,16 +4,18 @@ A build cop monitors the [continuous integration system](http://build.osrfoundat
 
 * [Jenkins Build Fail](http://build.osrfoundation.org/view/main/view/BuildCopFail/)
 
-Use the following script to count the number of jobs of a given color:
+Use the [buildcop_stats.bash](https://bitbucket.org/osrf/release-tools/src/7bc7933e953c0906b1e1e84c7c4681209bd0c932/jenkins-scripts/tools/buildcop_stats.bash?at=default&fileviewer=file-view-default) script from release-tools to count the number of jobs of a given color:
 
 ~~~
 curl https://build.osrfoundation.org/view/main/view/BuildCopFail/api/json 2>/dev/null | python -c '\
 import json, sys;
 jobs = json.loads(sys.stdin.read())["jobs"];
-print("total: %d" % len(jobs));
+print("| Type | Count | Percent | Change |")
+print("|--|--|--|--|")
+print("| total | %d | |  |" % len(jobs));
 for c in ["blue", "yellow", "red", "aborted"]:
-    jc = [j for j in jobs if j["color"] == c]
-    print("* %s: %d/%d, %.1f%%" % (c, len(jc), len(jobs), 100*float(len(jc)) / len(jobs)))'
+    jc = [j for j in jobs if j["color"].startswith(c)]
+    print("| %s | %d/%d | %.1f%% |  |" % (c, len(jc), len(jobs), 100*float(len(jc)) / len(jobs)))'
 ~~~
 
 It will generate output like the following:
