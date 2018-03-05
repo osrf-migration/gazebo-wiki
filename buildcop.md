@@ -48,6 +48,8 @@ A build cop:
 
 1. Actively monitors the [BuildCopFail page](https://build.osrfoundation.org/view/main/view/BuildCopFail/) for failures. At a minimum this should be done once per day.
 
+1. Restart any builds that appear to have failed for spurious reasons.
+
 1. Send out a daily report about the build status, and create an entry on this wiki (see the report list below).
 
 1. Sent out a weekly report on Friday that summarizes the build status over the past week.
