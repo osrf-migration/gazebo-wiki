@@ -21,12 +21,28 @@ for c in ["blue", "yellow", "red", "aborted"]:
 It will generate output like the following:
 
 ~~~
-* total: 114
-* blue: 64/114, 56.1%
-* yellow: 39/114, 34.2%
-* red: 9/114, 7.9%
-* aborted: 2/114, 1.8%
+| Type | Count | Percent | Change |
+|--|--|--|--|
+| total | 115 | |  |
+| blue | 72/115 | 62.6% |  |
+| yellow | 34/115 | 29.6% |  |
+| red | 9/115 | 7.8% |  |
+| aborted | 0/115 | 0.0% |  |
 ~~~
+
+that renders in markdown like the following:
+
+| Type | Count | Percent | Change |
+|--|--|--|--|
+| total | 115 | |  |
+| blue | 72/115 | 62.6% |  |
+| yellow | 34/115 | 29.6% |  |
+| red | 9/115 | 7.8% |  |
+| aborted | 0/115 | 0.0% |  |
+
+You can manually add entries to the change column by comparing to the entries in the previous build cop entry.
+
+## Tasks
 
 A build cop:
 
