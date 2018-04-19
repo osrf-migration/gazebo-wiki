@@ -81,3 +81,4 @@ A build cop:
 * [January build report](https://bitbucket.org/osrf/gazebo/wiki/buildcop/2018/01)
 * [February build report](https://bitbucket.org/osrf/gazebo/wiki/buildcop/2018/02)
 * [March build report](https://bitbucket.org/osrf/gazebo/wiki/buildcop/2018/03)
+* [April build report](https://bitbucket.org/osrf/gazebo/wiki/buildcop/2018/04)
