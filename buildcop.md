@@ -4,43 +4,63 @@ A build cop monitors the [continuous integration system](http://build.osrfoundat
 
 * [Jenkins Build Fail](http://build.osrfoundation.org/view/main/view/BuildCopFail/)
 
-Use the [buildcop_stats.bash](https://bitbucket.org/osrf/release-tools/src/7bc7933e953c0906b1e1e84c7c4681209bd0c932/jenkins-scripts/tools/buildcop_stats.bash?at=default&fileviewer=file-view-default) script from release-tools to count the number of jobs of a given color:
-
-~~~
-curl https://build.osrfoundation.org/view/main/view/BuildCopFail/api/json 2>/dev/null | python -c '\
-import json, sys;
-jobs = json.loads(sys.stdin.read())["jobs"];
-print("| Type | Count | Percent | Change |")
-print("|--|--|--|--|")
-print("| total | %d | |  |" % len(jobs));
-for c in ["blue", "yellow", "red", "aborted"]:
-    jc = [j for j in jobs if j["color"].startswith(c)]
-    print("| %s | %d/%d | %.1f%% |  |" % (c, len(jc), len(jobs), 100*float(len(jc)) / len(jobs)))'
-~~~
-
+Use the [buildcop_stats.bash](https://bitbucket.org/osrf/release-tools/src/7bc7933e953c0906b1e1e84c7c4681209bd0c932/jenkins-scripts/tools/buildcop_stats.bash?at=default&fileviewer=file-view-default) script from release-tools to count the number of jobs of a given color.
 It will generate output like the following:
 
 ~~~
+# Build Cop Report 2018-MM-DD
+
+## Aggregate Results as of 2018-MM-DD time
+
 | Type | Count | Percent | Change |
 |--|--|--|--|
-| total | 115 | |  |
-| blue | 72/115 | 62.6% |  |
-| yellow | 34/115 | 29.6% |  |
-| red | 9/115 | 7.8% |  |
-| aborted | 0/115 | 0.0% |  |
+| total | 175 | |  |
+| blue | 104/175 | 59.4% |  |
+| yellow | 59/175 | 33.7% |  |
+| red | 10/175 | 5.7% |  |
+| aborted | 2/175 | 1.1% |  |
+| notbuilt | 0/175 | 0.0% |  |
+
+## [Failing Builds](https://build.osrfoundation.org/view/main/view/BuildCopFail/)
+
+
+### Builds with no record of passing
+
+...
+
+
+### Builds that have succeeded in the past, but are failing now
+
+...
 ~~~
 
-that renders in markdown like the following:
+that renders in markdown as shown below. You can manually add entries to the change column by comparing to the entries in the previous build cop entry.
+
+# Build Cop Report 2018-MM-DD
+
+## Aggregate Results as of 2018-MM-DD time
 
 | Type | Count | Percent | Change |
 |--|--|--|--|
-| total | 115 | |  |
-| blue | 72/115 | 62.6% |  |
-| yellow | 34/115 | 29.6% |  |
-| red | 9/115 | 7.8% |  |
-| aborted | 0/115 | 0.0% |  |
+| total | 175 | |  |
+| blue | 104/175 | 59.4% |  |
+| yellow | 59/175 | 33.7% |  |
+| red | 10/175 | 5.7% |  |
+| aborted | 2/175 | 1.1% |  |
+| notbuilt | 0/175 | 0.0% |  |
 
-You can manually add entries to the change column by comparing to the entries in the previous build cop entry.
+## [Failing Builds](https://build.osrfoundation.org/view/main/view/BuildCopFail/)
+
+
+### Builds with no record of passing
+
+...
+
+
+### Builds that have succeeded in the past, but are failing now
+
+...
+
 
 ## Tasks
 
