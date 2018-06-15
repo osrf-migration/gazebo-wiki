@@ -4,7 +4,7 @@ A build cop monitors the [continuous integration system](http://build.osrfoundat
 
 * [Jenkins Build Fail](http://build.osrfoundation.org/view/main/view/BuildCopFail/)
 
-Use the [buildcop_stats.bash](https://bitbucket.org/osrf/release-tools/src/7bc7933e953c0906b1e1e84c7c4681209bd0c932/jenkins-scripts/tools/buildcop_stats.bash?at=default&fileviewer=file-view-default) script from release-tools to count the number of jobs of a given color.
+Use the [buildcop_stats.bash](https://bitbucket.org/osrf/release-tools/src/default/jenkins-scripts/tools/buildcop_stats.bash) script from release-tools to count the number of jobs of a given color.
 It will generate output like the following:
 
 ~~~
