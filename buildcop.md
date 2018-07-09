@@ -70,6 +70,10 @@ A build cop:
 
 1. Restart any builds that appear to have failed for spurious reasons.
 
+1. Notify the pull request creator and reviewers when a build breaks due to their pull request. This is done by creating a task in the [simulation build cop asana project](https://app.asana.com/0/730044667471131/732514688627118). Assign the task to the appropriate people and set the task status to Fail. The build cop should not debug the failure.
+
+1. If you cannot easily determine which pull-request broke the build, then all associated pull requests with be will be notified. 
+
 1. Send out a daily report about the build status, and create an entry on this wiki (see the report list below).
 
 1. Sent out a weekly report on Friday that summarizes the build status over the past week.
