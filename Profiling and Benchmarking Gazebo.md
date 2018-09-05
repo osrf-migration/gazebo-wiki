@@ -60,6 +60,8 @@ NVidia Linux Graphics Debugger: https://developer.nvidia.com/linux-graphics-debu
 
 Note: Linux Graphics Debugger has been deprecated in favor of Nsight: https://developer.nvidia.com/nsight-graphics
 
+With either method, the executable must be launched from within the Graphics Debugger or Nsight context.  Due to the way that we use OGRE, it may be necessary to change the frame end command to `glFlushMappedBufferRange` or equivalent, otherwise the debugger cannot accurately detect the end of frames.  
+
 # OGRE Profiler #
 
 OGRE has a built-in profiler, but it must be enabled as part of the build process (release versions of OGRE do not have it).
@@ -76,6 +78,16 @@ And at the end of execution:
 ```
 Ogre::Profiler.getSingleton().logResults();
 ```
+
+To instrument a piece of code, place an `OgreProfiler` call in the scope of interest.  The timer will start when the `OgreProfiler` method is called and will stop when the method goes out of scope.
+```
+OgreProfiler("outside_loop");
+for(size_t ii = 0; ii < 100; ++ii) {
+  OgreProfiler("test_sleep");
+  usleep(100);
+}
+```
+
 
 # Gazebo Diagnostics #
 
