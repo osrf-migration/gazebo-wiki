@@ -81,9 +81,9 @@ Ogre::Profiler.getSingleton().logResults();
 
 To instrument a piece of code, place an `OgreProfiler` call in the scope of interest.  The timer will start when the `OgreProfiler` method is called and will stop when the method goes out of scope.
 ```
-OgreProfiler("outside_loop");
+OgreProfile("outside_loop");
 for(size_t ii = 0; ii < 100; ++ii) {
-  OgreProfiler("test_sleep");
+  OgreProfile("test_sleep");
   usleep(100);
 }
 ```
