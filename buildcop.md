@@ -125,3 +125,4 @@ A person who breaks the build:
 * [September build report](https://bitbucket.org/osrf/gazebo/wiki/buildcop/2018/09)
 * [October build report](https://bitbucket.org/osrf/gazebo/wiki/buildcop/2018/10)
 * [November build report](https://bitbucket.org/osrf/gazebo/wiki/buildcop/2018/11)
+* [December build report](https://bitbucket.org/osrf/gazebo/wiki/buildcop/2018/12)
