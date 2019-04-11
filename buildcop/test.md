@@ -1,6 +1,7 @@
 # Build Cop Report 2019-04-11
+## Aggregate Results as of 2019-04-11 20:45:38
 
-## Aggregate Results as of 2019-04-11 20:40:05.502524
+## [ign-acropolis builds](https://build.osrfoundation.org/view/ign-acropolis/)
 
 | Type | Count | Percent | Change |
 |--|--|--|--|
@@ -9,9 +10,6 @@
 | red | 1/58 | 1.7% |  |
 | aborted | 0/58 | 0.0% |  |
 | notbuilt | 0/58 | 0.0% |  |
-
-## [ign-acropolis builds](https://build.osrfoundation.org/view/ign-acropolis/)
-
 
 ### Builds with no record of passing
 
@@ -41,9 +39,8 @@
 
 * [![Build Status](https://build.osrfoundation.org/job/ignition_transport-ci-ign-transport6-windows7-amd64//badge/icon)](https://build.osrfoundation.org/job/ignition_transport-ci-ign-transport6-windows7-amd64/) [ignition_transport-ci-ign-transport6-windows7-amd64](https://build.osrfoundation.org/job/ignition_transport-ci-ign-transport6-windows7-amd64/)
 
-# Build Cop Report 2019-04-11
 
-## Aggregate Results as of 2019-04-11 20:40:06.558208
+## [ign-blueprint builds](https://build.osrfoundation.org/view/ign-blueprint/)
 
 | Type | Count | Percent | Change |
 |--|--|--|--|
@@ -52,9 +49,6 @@
 | red | 4/51 | 7.8% |  |
 | aborted | 0/51 | 0.0% |  |
 | notbuilt | 0/51 | 0.0% |  |
-
-## [ign-blueprint builds](https://build.osrfoundation.org/view/ign-blueprint/)
-
 
 ### Builds with no record of passing
 
