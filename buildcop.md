@@ -2,8 +2,6 @@
 
 A build cop monitors the [continuous integration system](http://build.osrfoundation.org), reports build and test failures, and farms out work to resolve issues. The role of build cop rotates on a weekly basis between OSRF developers.
 
-* [Jenkins Build Fail](http://build.osrfoundation.org/view/main/view/BuildCopFail/)
-
 Use the [buildcop_stats.bash](https://bitbucket.org/osrf/release-tools/src/default/jenkins-scripts/tools/buildcop_stats.bash) script from release-tools to count the number of jobs of a given color.
 It will generate output like the following:
 
@@ -36,6 +34,8 @@ It will generate output like the following:
 
 that renders in markdown as shown below. You can manually add entries to the change column by comparing to the entries in the previous build cop entry.
 
+---
+
 # Build Cop Report 2018-MM-DD
 
 ## Aggregate Results as of 2018-MM-DD time
@@ -61,18 +61,19 @@ that renders in markdown as shown below. You can manually add entries to the cha
 
 ...
 
+---
 
 ## Tasks
 
 A build cop:
 
-1. Actively monitors the [BuildCopFail page](https://build.osrfoundation.org/view/main/view/BuildCopFail/) for failures. At a minimum this should be done once per day.
+1. Actively monitors the [Gazebo](https://github.com/osrf/buildfarmer/blob/master/Gazebo.md) and [Ignition](https://github.com/osrf/buildfarmer/blob/master/Ignition.md) pages for failures. At a minimum this should be done once per day.
 
 1. Restart any builds that appear to have failed for spurious reasons.
 
-1. Notifies the pull request creator and reviewers when a build breaks due to their pull request. This is done by creating a task in the [simulation build cop asana project](https://app.asana.com/0/730044667471131/732514688627118). Assign the task to the appropriate people and set the task status to Fail. The build cop should not debug the failure.
+1. Notifies the pull request creator and reviewers when a build breaks due to their pull request. Under normal circumstances, the build cop should not debug the failure.
 
-1. If you cannot easily determine which pull-request broke the build, then all associated pull requests with be will be notified.
+1. If you cannot easily determine which pull-request broke the build, then all associated pull requests will be notified.
 
 1. Send out a daily report about the build status, and create an entry on this wiki (see the report list below).
 
@@ -80,15 +81,11 @@ A build cop:
 
 A person who breaks the build:
 
-1. Updates the asana task status to "Under repair" when you have started work on the failing job.
-
 1. Debugs the failure, and does one of the following:
 
     1. Fixes the problem
 
     1. Disable the failing test if it's flaky, and create an issue.
-
-1. Mark asana task as complete after step 2.
 
 ## Reports
 
